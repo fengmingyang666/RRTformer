@@ -10,7 +10,7 @@ To run our code, `numpy`and`torch` is needed. If you want to record the training
 ## Quick Start
 
 ### Related Data
-Download [nirrt_star-icra24-data.zip](https://drive.google.com/file/d/1omIxfoASMzWBUcdXS7-9WiJbc2xTikf2/view?usp=drive_link) and move the zip file into the root folder of this repo. Run
+Download [rrt_net_data.zip](https://drive.google.com/file/d/1-1GqCMNWjuwJkmsNNJ0gX-vPvRRLpuhh/view?usp=drive_link) and move the zip file into the root folder of this repo. Run
 ```bash
 cd RRT-Net/
 unzip rrt_net_data.zip

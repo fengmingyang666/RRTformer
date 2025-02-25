@@ -1,0 +1,35 @@
+2025-02-25 12:24:32,566 INFO    MainThread:2004 [wandb_setup.py:_flush():76] Current SDK version is 0.16.1
+2025-02-25 12:24:32,566 INFO    MainThread:2004 [wandb_setup.py:_flush():76] Configure stats pid to 2004
+2025-02-25 12:24:32,566 INFO    MainThread:2004 [wandb_setup.py:_flush():76] Loading settings from C:\Users\16422\.config\wandb\settings
+2025-02-25 12:24:32,566 INFO    MainThread:2004 [wandb_setup.py:_flush():76] Loading settings from D:\git\RRT-Net\2d\wandb\settings
+2025-02-25 12:24:32,567 INFO    MainThread:2004 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2025-02-25 12:24:32,567 INFO    MainThread:2004 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2025-02-25 12:24:32,567 INFO    MainThread:2004 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'RRT-Net\\2d\\train.py', 'program_abspath': 'D:\\git\\RRT-Net\\2d\\train.py', 'program': 'D:\\git\\RRT-Net\\2d\\train.py'}
+2025-02-25 12:24:32,567 INFO    MainThread:2004 [wandb_init.py:_log_setup():524] Logging user logs to D:\git\RRT-Net\2d\wandb\run-20250225_122432-fgyati6c\logs\debug.log
+2025-02-25 12:24:32,567 INFO    MainThread:2004 [wandb_init.py:_log_setup():525] Logging internal logs to D:\git\RRT-Net\2d\wandb\run-20250225_122432-fgyati6c\logs\debug-internal.log
+2025-02-25 12:24:32,567 INFO    MainThread:2004 [wandb_init.py:init():564] calling init triggers
+2025-02-25 12:24:32,567 INFO    MainThread:2004 [wandb_init.py:init():571] wandb.init called with sweep_config: {}
+config: {'epochs': 2000, 'batch_size': 256, 'lr': 0.0001, 'dataset': '../data/astar_2d.npy'}
+2025-02-25 12:24:32,567 INFO    MainThread:2004 [wandb_init.py:init():614] starting backend
+2025-02-25 12:24:32,567 INFO    MainThread:2004 [wandb_init.py:init():618] setting up manager
+2025-02-25 12:24:32,572 INFO    MainThread:2004 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=spawn, using: spawn
+2025-02-25 12:24:32,580 INFO    MainThread:2004 [wandb_init.py:init():624] backend started and connected
+2025-02-25 12:24:32,585 INFO    MainThread:2004 [wandb_init.py:init():716] updated telemetry
+2025-02-25 12:24:32,669 INFO    MainThread:2004 [wandb_init.py:init():749] communicating run to backend with 90.0 second timeout
+2025-02-25 12:24:44,801 WARNING MainThread:2004 [wandb_init.py:init():1192] interrupted
+Traceback (most recent call last):
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\wandb_init.py", line 1170, in init
+    run = wi.init()
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\wandb_init.py", line 752, in init
+    result = run_init_handle.wait(
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\lib\mailbox.py", line 283, in wait
+    found, abandoned = self._slot._get_and_clear(timeout=wait_timeout)
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\lib\mailbox.py", line 130, in _get_and_clear
+    if self._wait(timeout=timeout):
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\lib\mailbox.py", line 126, in _wait
+    return self._event.wait(timeout=timeout)
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\threading.py", line 600, in wait
+    signaled = self._cond.wait(timeout)
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\threading.py", line 324, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

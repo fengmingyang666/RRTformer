@@ -1,0 +1,56 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.10.2",
+    "heartbeatAt": "2025-02-25T04:25:22.600882",
+    "startedAt": "2025-02-25T04:25:22.447741",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--dataset_path=../data/astar_2d.npy",
+        "--checkpoint_dir=../checkpoint/2d"
+    ],
+    "state": "running",
+    "program": "D:\\git\\RRT-Net\\2d\\train.py",
+    "codePathLocal": "train.py",
+    "codePath": "RRT-Net\\2d\\train.py",
+    "git": {
+        "remote": null,
+        "commit": "fbff549ccbd9ffdb3e91bf6f29bd8ae883bdfb20"
+    },
+    "email": "1642264038@qq.com",
+    "root": "D:/git",
+    "host": "DESKTOP-7H3AFGB",
+    "username": "16422",
+    "executable": "C:\\Users\\16422\\AppData\\Local\\Programs\\Python\\Python310\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2304.0,
+        "min": 0.0,
+        "max": 2304.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2304.0,
+            "min": 0.0,
+            "max": 2304.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 207.57519149780273,
+            "used": 202.59912872314453
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 31.73318862915039
+    }
+}

@@ -1,0 +1,65 @@
+2025-02-25 12:24:32,576 INFO    StreamThr :29840 [internal.py:wandb_internal():86] W&B internal server running at pid: 29840, started at: 2025-02-25 12:24:32.575870
+2025-02-25 12:24:32,580 DEBUG   HandlerThread:29840 [handler.py:handle_request():146] handle_request: status
+2025-02-25 12:24:32,586 INFO    WriterThread:29840 [datastore.py:open_for_write():85] open: D:\git\RRT-Net\2d\wandb\run-20250225_122432-fgyati6c\run-fgyati6c.wandb
+2025-02-25 12:24:32,587 DEBUG   SenderThread:29840 [sender.py:send():382] send: header
+2025-02-25 12:24:32,671 DEBUG   SenderThread:29840 [sender.py:send():382] send: run
+2025-02-25 12:24:35,827 INFO    SenderThread:29840 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 711, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 1007, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 369, in connect
+    self.sock = conn = self._connect_tls_proxy(hostname, conn)
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 504, in _connect_tls_proxy
+    socket = ssl_wrap_socket(
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 453, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls)
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\ssl_.py", line 495, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock)
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 512, in wrap_socket
+    return self.sslsocket_class._create(
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1070, in _create
+    self.do_handshake()
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\ssl.py", line 1341, in do_handshake
+    self._sslobj.do_handshake()
+ssl.SSLEOFError: EOF occurred in violation of protocol (_ssl.c:997)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 440, in send
+    resp = conn.urlopen(
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 798, in urlopen
+    retries = retries.increment(
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\internal\internal_api.py", line 369, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\wandb\sdk\lib\gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 577, in post
+    return self.request('POST', url, data=data, json=json, **kwargs)
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 529, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 645, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\16422\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 517, in send
+    raise SSLError(e, request=request)
+requests.exceptions.SSLError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:997)')))
+2025-02-25 12:24:37,710 DEBUG   HandlerThread:29840 [handler.py:handle_request():146] handle_request: keepalive
+2025-02-25 12:24:42,778 DEBUG   HandlerThread:29840 [handler.py:handle_request():146] handle_request: keepalive
+2025-02-25 12:24:44,816 DEBUG   HandlerThread:29840 [handler.py:handle_request():146] handle_request: shutdown
+2025-02-25 12:24:44,816 INFO    HandlerThread:29840 [handler.py:finish():866] shutting down handler
+2025-02-25 12:24:45,811 INFO    WriterThread:29840 [datastore.py:close():294] close: D:\git\RRT-Net\2d\wandb\run-20250225_122432-fgyati6c\run-fgyati6c.wandb
