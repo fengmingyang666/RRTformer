@@ -1,8 +1,8 @@
-# RRT*-Net
+# RRT*former
 
-This is the implementation of RRT*-Net
+This is the implementation of RRT*former
 
-### RRT*-Net: Leveraging Transformer for Adaptive Sampling in RRT-based Motion Planning
+### RRT*former: nvironment-Aware Sampling-Based Motion Planning using Transformer
 
 ## Setup
 To run our code, `numpy`and`torch` is needed. If you want to record the training process, `wandb` is also needed.
@@ -12,7 +12,7 @@ To run our code, `numpy`and`torch` is needed. If you want to record the training
 ### Related Data
 Download [rrt_net_data.zip](https://drive.google.com/file/d/1-1GqCMNWjuwJkmsNNJ0gX-vPvRRLpuhh/view?usp=drive_link) and move the zip file into the root folder of this repo. Run
 ```bash
-cd RRT-Net/
+cd RRTformer/
 unzip rrt_net_data.zip
 ```
 
