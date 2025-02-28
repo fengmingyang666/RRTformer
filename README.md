@@ -5,7 +5,12 @@ This is the implementation of RRT*former
 ### RRT*former: Environment-Aware Sampling-Based Motion Planning using Transformer
 
 ## Setup
-To run our code, `numpy`and`torch` is needed. If you want to record the training process, `wandb` is also needed.
+A suitable conda environment named RRTformer can be created and activated with:
+```bash
+conda env create -f environment.yaml
+conda activate RRTformer
+```
+If you want to record the training process, `wandb` is also needed.
 
 ## Quick Start
 
