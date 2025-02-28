@@ -2,7 +2,7 @@
 
 This is the implementation of RRT*former
 
-### RRT*former: nvironment-Aware Sampling-Based Motion Planning using Transformer
+### RRT*former: Environment-Aware Sampling-Based Motion Planning using Transformer
 
 ## Setup
 To run our code, `numpy`and`torch` is needed. If you want to record the training process, `wandb` is also needed.
